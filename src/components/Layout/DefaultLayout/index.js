@@ -1,6 +1,6 @@
 import Header from "../DefaultLayout/Header";
 import Sidebar from "../DefaultLayout/Sidebar";
-import classNames from "classnames";
+
 import styles from "./DefaultLayout.module.scss"
 function DefaultLayout({ children }) {
   return ( <div className={styles.wrapper}>  

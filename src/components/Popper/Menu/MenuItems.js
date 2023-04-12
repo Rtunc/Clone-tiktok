@@ -5,13 +5,11 @@ import classNames from "classnames/bind";
 
 const cx = classNames.bind(styles)
 
-function MenuItems({data}) {
+function MenuItems({data, onClick}) {
     return (
-            <Button className={cx('menu-button')}>{data.icon} {data.title}</Button>
+            <Button className={cx('menu-button')} onClick={onClick} ><div className={cx('menu-icon')}>{data.icon}</div> {data.title}</Button>
     )
 }
 
-setTimeout(()=> {
-    debugger
-},3000)
+
 export default MenuItems; 

@@ -1,7 +1,54 @@
 .menu-list {
     width: 224px;
     display: block;
+
+
+    
+
+
     .menu-button{
-        margin-left: 16px;
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 16px;
+       
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        &:hover {
+            background-color: rgba(22, 24, 35, 0.06);
+        }
+        &:last-child {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        
+
+        .menu-icon{
+            display: inline-block;
+            margin-right: 8px;
+        }
     }
+
+}
+
+.header {
+    margin-top: -8px;
+    position: relative;
+    height: 50px;
+}
+.back-btn {
+    background-color:  transparent;
+    cursor: pointer;
+    width: 50px;
+    height: 100%;
+    border: none;
+    display: block;
+    
+}
+.header-title {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% ,-50%);
+    font-size: 1.6rem;
 }
